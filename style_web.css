@@ -1,0 +1,129 @@
+.nav ul li a{
+    color: white;
+    text-decoration: none; /* Quita la decoracion de subrayado del texto */
+}
+
+.inicio{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.cabecera{
+    background-color: rgb(133, 83, 26);
+    color: white;
+    align-items: center;
+    padding: 20px; /* Espacio interno (arriba/abajo, izquierda/derecha) */
+    display: flex; /* Hace flexible el contenido del header */
+    justify-content: space-between; /* Distribuye los elementos hijos a lo largo del eje principal */
+    font-family: 'Franklin Gothic Medium';
+}
+
+.nav ul{
+    display: flex;
+    gap: 24px; /* Define el espacio entre filas y columnas */
+    list-style: none; /* Quita los estilos (Puntos de numeración) del nav */
+}
+
+.text{
+    text-align: center;
+    font-family: 'Calibri';
+    font-size: 17px; /* Asigna un tamaño de letra especifico */
+    margin-block-end: 30px;
+}
+
+.cuerpo{
+    background-color: bisque;
+}
+
+.inicio img {
+    margin: 0 20px; /* 15px a izquierda y derecha para separar las imagenes entre si */
+    border-radius: 8px; /* Redondea los bordes de las imagenes */
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(133, 83, 26);
+    color: white
+}
+
+.producto{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    margin-block-end: 30px;
+}
+
+.footer-seccion{
+    font-family: 'Franklin Gothic Medium';
+}
+
+
+.formulario-contacto {
+    max-width: 600px; /* Define el largo de los espacios de texto del formulario */
+    margin: 0 auto; /* Alinea el formulario en el centro de la pagina */
+    padding: 2rem; /* Coloca un espacio de relleno alrrededor del formulario */
+    background-color: bisque; /*Define el color de fondo del formulario */
+    font-family: 'Arial', sans-serif;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column; /* Coloca el formulario bien distribuido en filas */
+    gap: 1.5rem; /* Establece un espacio entre las filas del formulario */
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column; /* Coloca los campos de relleno del formulario bien distribuido en filas */
+    gap: 0.5rem;
+}
+
+.campo-formulario label {
+    font-weight: 600; /* Coloca un grosor en el texto del formulario */
+    color: #555;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    padding: 0.8rem;
+    border: 1px solid #ffffff; /* Define el color del brode de los espacios de escritura del formulario */
+    border-radius: 5px; /* Redondea los bordes del formulario */
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+.campo-formulario textarea {
+    resize: vertical; /* Limita el espacio en el que puede expandirse el apartado de 'Mensaje' */
+    min-height: 120px; /* Establece el espacio que se muestra del apartado de 'Mensaje' */
+}
+
+/*Da formato a los botones de la pagina*/
+.boton,
+.formulario-contacto button{
+    background-color: #ffffff; 
+    color: black; 
+    padding: 0.8rem 1.5rem; /* Espacio interno (arriba/abajo, izquierda/derecha) */
+    border: none; /* Elimina el borde predeterminado del button */
+    border-radius: 5px; /* Redondea los bordes del button */
+    font-size: 16px; /* Da un tamaño del texto */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
+    transition: background-color 0.3s; /* Efecto de transición suave */
+    margin-top: 30px; /* Margen superior para separarlo de las imágenes */
+    margin-block-end: 30px;
+    align-self: flex-start;
+}
+
+/*Coloca un color mas oscuro si */
+.formulario-contacto button:hover{
+    background-color: #677078;
+}
+
+.text button:hover{
+    background-color: #677078;
+}
